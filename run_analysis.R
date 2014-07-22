@@ -148,8 +148,13 @@ run_analysis <- function() {
   log_debug("(5.b) create a 2nd dataset with avg()(over partition by ( activity,subject)) - (begin)")
   
   # generate the dataset inside a .csv file:
-  x_tidy_completefilename = paste0("./", x_tidy_basefilename, ".csv", sep="")
-  write.csv(meanData, file=x_tidy_completefilename, row.names=TRUE, quote=FALSE)
+  x_tidy_completefilename_dataset = paste0("./", x_tidy_basefilename, ".csv", sep="")
+  write.table(meanData, file=x_tidy_completefilename_dataset, row.names=FALSE, quote=FALSE,col.names=FALSE,sep=",")
+  
+  # generate the header inside a .txt file:
+  x_tidy_completefilename_header  = paste0("./", x_tidy_basefilename, "_head.txt", sep="")
+  write.table(names(meanData),file=x_tidy_completefilename_header,row.names=FALSE,quote=FALSE,col.names=FALSE,sep=",")
+  
   
   # return the avg
   invisible(meanData)

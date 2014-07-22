@@ -63,14 +63,24 @@ Those 6 measures taken at a speed of 50 Mhz are preprocessed with filters and co
 
 ## ARTIFACTS
 
- i  |     fileName             | description
----	| ------------------------ | --------------------------------
-1.  | 02_Tidy_Dataset (00).csv | the generated tidy dataset
-2.  | run_analysis.R           | script that performs the data-cleaning preprocessing step
-3.  | CodeBook.md              | the codebook file	with	
-    |	                       | * variables
-    |	                       | * data
-4.  | 01_Raw_Dataset           | getdata_projectfiles_UCI HAR Dataset.zip file extracted in folder called "01_Raw_Dataset"
+ i  |     fileName                  | description
+---	| ----------------------------- | ----------------------------------------
+1.a | 02_Tidy_Dataset (00).csv      | the generated tidy dataset data
+1.b | 02_Tidy_Dataset (00)_head.txt | the generated tidy dataset column-names
+2.  | run_analysis.R                | script that performs the data-cleaning preprocessing step
+3.  | CodeBook.md                   | the codebook file	with	
+    |	                            | * variables
+    |	                            | * data
+4.  | 01_Raw_Dataset                | getdata_projectfiles_UCI HAR Dataset.zip file extracted in folder called "01_Raw_Dataset"
+
+## GIT INFORMATION
+Commit is made according the following instructions
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/andhdo/coursera_ds_getclndata_project.git
+git push -u origin master
 
 	
 	
