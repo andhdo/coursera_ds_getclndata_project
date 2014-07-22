@@ -4,30 +4,33 @@
 
 To use the program:
 
-0. install prerrequisites. It's needed to run this program to install the following R packages
-* data.table
+1. install prerrequisites. It's needed to run this program to install the following R packages
+```r
+data.table
+```
 Use the following directives to install
 ```r
 install.packages("data.table")
 ```
 
-1. go to the directory where the source code resides and set the working directory using the following function
+2. go to the directory where the source code resides and set the working directory using the following function
 ```r
 setwd()
 ```
-2. Execute the following sentences to download the raw data to be processed
+3. Execute the following sentences to download the raw data to be processed
 ```r
 source('./run_analysis.R')
 prepare_raw_data()
 ```
-This script downloads the associated Samsung's data raw dataset package files available on the internet with the url indicated below as parameter RAW_DATASET_URL, and puts a copy into the current directory. After that it decompreses the 
+
+NOTE: This script downloads the associated Samsung's data raw dataset package files available on the internet with the url indicated below as parameter RAW_DATASET_URL, and puts a copy into the current directory. After that it decompreses the 
 file. As alternative of this step you can download the raw dataset zip file, put it beside the source files and decompress the file in a directory with 
 the name indicated below as parameter RAW_FOLDER_NAME:
  
-a. Tne associated RAW_DATASET_URL is: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-b. Unzipped RAW_FOLDER_NAME is: 01_Raw_Dataset 
+* The associated RAW_DATASET_URL is: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* Unzipped RAW_FOLDER_NAME is: 01_Raw_Dataset 
 
-3. execute the following sentences
+4. execute the following sentences
 ```r
 source('./run_analysis.R')
 run_analysis()
@@ -75,13 +78,13 @@ Those 6 measures taken at a speed of 50 Mhz are preprocessed with filters and co
 
 ## GIT INFORMATION
 Commit is made according the following instructions
-'''r
+```r
 touch README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/andhdo/coursera_ds_getclndata_project.git
 git push -u origin master
-'''
+```
 	
 	
