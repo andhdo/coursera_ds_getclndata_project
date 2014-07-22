@@ -56,7 +56,7 @@ The function run_analysis does the following set of steps:
 Explore the student capabilities to (1)	collect, (2) work with and, (3) clean datasets.
 
 The data for the experiment were captured by sampling a population of 30 people within 19 to 48 years, performing several activities (walking,walking_upstairs,walking_downstairs,sitting,standing,laying) 
-and wearing a smartphone used as capturer. The devide used was Samsung Galaxy S II, but however could be applied to another set of cellphones [ pressing *#0*# and going to sensors link we can give us an ide of how it works](http://youtu.be/F1vqmzDsjGc).
+and wearing a smartphone used as capturer. The devide used was Samsung Galaxy S II, but however could be applied to another set of cellphones [ pressing \*#0\*# and going to sensors link we can give us an ide of how it works](http://youtu.be/F1vqmzDsjGc).
 The phone's [accelerometer](http://youtu.be/KZVgKu6v808) gives us 3 (x,y,z) measures relatives to the person doing activities while cellphone is moving, and simultaneously the phone's [gyro](http://youtu.be/zwe6LEYF0j8) capturing 3 measures too.
 Those 6 measures taken at a speed of 50 Mhz are preprocessed with filters and complemented with fast-fourier-transformation that implies to compute fixed-width-window-frames to estimate some related calculus of time and frequency.
 
@@ -75,12 +75,13 @@ Those 6 measures taken at a speed of 50 Mhz are preprocessed with filters and co
 
 ## GIT INFORMATION
 Commit is made according the following instructions
+'''r
 touch README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/andhdo/coursera_ds_getclndata_project.git
 git push -u origin master
-
+'''
 	
 	
