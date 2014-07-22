@@ -1,4 +1,0 @@
-x
-index
-raw_name
-name
